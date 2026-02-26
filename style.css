@@ -6,6 +6,8 @@
 }
 
 html, body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
   height: 100%;
   overflow-x: hidden;
 }
@@ -42,6 +44,7 @@ html, body {
 
 .nav-links li {
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 /* Hero Section */
@@ -67,14 +70,20 @@ html, body {
 }
 
 .hero button {
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: none;
   border-radius: 6px;
   background: white;
   color: #004aad;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.3s ease;
+
 }
+.hero button:hover {
+  background: #111;
+  color: white;
+  transform: scale(1.05);
 
 /* Mobile */
 @media (max-width: 768px) {
